@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    function test() {
+        throw {
+            eName: "testException",
+            message: "just a test"
+
+        };
+    }
+
+    try {
+        test();
+    } catch (e) {
+        alert(e.eName + "|||" + e.message);
+    }
+
+</script>
+
+</body>
+</html>
